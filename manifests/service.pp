@@ -6,6 +6,7 @@ class networkmanager::service {
 
   service { 'network-manager':
     ensure => $ensure,
+    name   => $networkmanager::service_name,
     enable => $::networkmanager::enable,
   }
 

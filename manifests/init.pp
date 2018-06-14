@@ -1,4 +1,7 @@
 class networkmanager(
+  $package_name = 'network-manager',
+  $service_name = 'network-manager',
+
   $version = present,
   $enable  = true,
   $start   = true,
